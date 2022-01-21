@@ -1,4 +1,65 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#">Angular</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Direttive&Pipe
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" routerLink="direttivestrutturali">Direttive Strutturali</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" routerLink="direttiveattributi">Direttive Attributo</a>
+        <a class="dropdown-item" routerLink="pipe">Pipe</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Geometria
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" routerLink="geometria/1">Cerchio</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" routerLink="geometria/2">Quadrato</a>
+        <a class="dropdown-item" routerLink="geometria/3">Rettangolo</a>
+        <a class="dropdown-item" routerLink="geometria/4">Triangolo</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="registrazione">Registrazione</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="listino">Listino</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Schede
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="schedaftd">Scheda Form Template Driven</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" routerLink="schedareact">Scheda Form Reactive</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="hooks">Hooks</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="coda">Observable</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="persone">Persone</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </li>
+  </ul>
+</div>
+</nav>
+<router-outlet></router-outlet>
